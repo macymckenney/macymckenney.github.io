@@ -1,0 +1,13 @@
+#box {
+    width: 50%;
+    margin: 100px auto;
+}
+h1{
+    text-align: left;
+}
+.container{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-column-gap: 10px;
+    padding-bottom: 90px;
+}

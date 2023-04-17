@@ -1,44 +1,59 @@
 #box{
     margin-top: 70px;
-    position: relative;
+    position: relative; /* Update to relative positioning */
     padding: 0 20%;
     padding-top: 5%;
 }
-#container{
-    display: grid;
-    grid-template: 1fr 1fr/0.5fr 0.5fr;
-    width: 100%;
-    grid-column-gap: 10%;
+
+body{
+    background-image: url(../images/skydive.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
+
+
+
 p{
     font-size: 20px;
 }
+
 #intro-h1{
-    text-align: center;
-}
-#image{
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    border-radius: 5%;
-    overflow: hidden;
-}
-
-
-#image img {
-    width: 100%;
-    height: auto;
+    text-align: left;
+    position: absolute; /* Update to absolute positioning */
+    top: 0; /* Position from the top of the parent element */
+    left: 0; /* Position from the left of the parent element */
+    z-index: 2; /* Set z-index to a higher value than #box */
+    background-color: transparent;
+    top: 120px;
+    padding-left: 20px;
 }
 
 #text1{
-    grid-column-start: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
+    text-align: left;
+    background-color: transparent;
+    position: absolute;
+    top: 190px; /* Update to a lower value */
+    left: 0;
+    padding-left: 20px; 
+    max-width: 600px;;
 }
 
 #text2{
-    grid-column-start: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
+    text-align: left;
+    background-color: transparent;
+    position: absolute;
+    top: 600px; /* Update to a lower value */
+    left: 0;
+    padding-left: 20px; 
+    max-width: 800px;;
+}
+
+#text1 p, #text2 p {
+    background-color: transparent;
+    font-size: 25px;
 }

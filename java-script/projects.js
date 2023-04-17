@@ -1,24 +1,19 @@
 const carouselImages = [
     {
-        url: 'images/idphoto.png',
-        title: 'Image 1 Title',
-        description: 'Image 1 Description'
+        url: 'images/robotic-comp.png',
+        title: 'Robot Disc Golf Vex Competition ',
+        description: 'I was on computer programming team for this robot and we got 3rd place!'
     },
     {
         url: 'images/Lancer Robot.png',
-        title: 'Image 2 Title',
-        description: 'Image 2 Description'
+        title: 'Remote Controlled Robot',
+        description: 'My team and I designed and coded a robot that collected golf balls and disposed them into the bucket'
     },
     {
-        url: 'images/mail.png',
-        title: 'Image 3 Title',
-        description: 'Image 3 Description'
+        url: 'images/alexa-arduino.png',
+        title: 'Alexa Arduino',
+        description: 'My team programmed Alexa to turn the lights on the breadboard on and off'
     },
-    {
-        url: 'images/Robot parts.png',
-        title: 'Image 455 Title',
-        description: 'Image 4 Description'
-    }
 ];
 
 const carousel = document.querySelector('.carousel-container');
